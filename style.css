@@ -44,11 +44,11 @@ body {
 }
 
 /* sous-texte d'info */
-@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@1,400&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@1,400&display=swap'); */
 ref-texte-small {
     font-size: 0.9em;
     font-style: italic;
-    font-family: "Cormorant Garamond", serif;
+    font-family: "Times New Roman", serif;
     text-align: center;
 }
 
