@@ -15,9 +15,10 @@
         }
 
         header img {
-            width: 100%;
-            height: auto;
+            width: 50%;
+            height: 50%;
             display: block;
+            margin: auto;
         }
 
         h1 {
@@ -48,8 +49,16 @@
             text-align: right;
         }
 
+        /* Image ajoutée avant la signature */
+        .second-image {
+            width: 50%;
+            height: 50%;
+            display: block;
+            margin: 40px auto 20px auto;
+        }
+
         .reponse-zone {
-            margin-top: 30px;
+            margin-top: 20px;
             text-align: center;
         }
 
@@ -68,29 +77,34 @@
 <body>
 
 <header>
-    <img src="IMAGE-Paris-Histoire.jpeg" alt="En-tête du jeu de Noël" style="width:50%; height:50%; display:block; margin:auto;">
+    <img src="IMAGE-Paris-Histoire.jpeg" alt="En-tête du jeu de Noël">
 </header>
 
 <div class="container">
     <h1>Jeu de Noël 2026</h1>
+
     <p>Pour cette fin d’année, vous allez (re)passer votre bac option Histoire de France, en visitant Paris…</p>
     <p>20 énigmes … ça tombe bien il y a 20 arrondissements à Paris !</p>
-    <p>1 petite énigme avec un chtit indice pour chaque arrondissement et une voie (rue / avenue / …) à y trouver, portant un nom qui a fait l’Histoire de France.</p>
+    <p>1 petite énigme avec 2 images-indices pour chaque arrondissement et une voie (rue / avenue / …) à y trouver, portant un nom qui a fait l’Histoire de France.</p>
     <p>Pour chaque réponse, vous partez de l’URL de départ, complété de la réponse proposée :  
     <strong>https://noel-2026.pages.dev/XX-reponse</strong></p>
     <p>Chaque page donnera une briève (variante historique de "brève" !) explication de la réponse avec l'énigme suivante.</p>
-    <p>Comme d’habitude, les blancs ou apostrophes éventuels sont remplacés par des « - », et pas d’accent, ni d'éventuelle particule.</p>
-    <p>Vous pouvez vous mettre en équipe jusqu’à 4-5 si vous voulez, pour jouer jusqu’au 10 décembre</p>
+    <p>Comme d’habitude, les blancs ou apostrophes éventuels sont remplacés par des « - », et pas d’accent, ni d'éventuels article/particule devant.</p>
+    <p>Vous pouvez vous mettre en équipe jusqu’à 4-5 si vous voulez, pour jouer jusqu’au 10 décembre.</p>
     <p>En cas de blocage, vous pouvez demander de l’aide à F.Monino.</p>
     <p>La dernière réponse sera à donner à Naïma pour valider votre 20/20 et recevoir le petit cadeau :</p>
     <p>un cagnottage de 20€ aux 15 premiers, 15€ à 10 tirés au sort parmi les suivants (à utiliser avant le 01/04/2027).</p>
-    <p class="signature">Le CSE</p>
+
+    <p>Voici la 1ère énigme, avec une réponse à ajouter à l'url ainsi "/01_xxxxx"</p>
+    <!-- Image ajoutée avant la signature -->
+    <img src="IMAGE-01.jpeg" alt="Illustration supplémentaire" class="second-image">
 
     <div class="reponse-zone">
         <label for="reponse">Réponse :</label>
         <input type="text" id="reponse" name="reponse" autocomplete="off">
     </div>
 
+    <p class="signature">Le CSE</p>
 </div>
 
 <script>
