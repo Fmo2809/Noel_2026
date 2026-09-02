@@ -42,13 +42,7 @@ body {
     text-align: center;
     margin-top: 10px;
 }
-/* sous-texte d'info */
-.ref-texte-small {
-    font-size: 0.9em;   /* plus petit que la taille normale */
-    font-style: italic;
-    font-family: "Cormorant Garamond", serif;
-    text-align: center;
-}
+
 /* Titre d’énigme */
 .enigme {
     margin-top: 40px;
