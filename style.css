@@ -1,0 +1,66 @@
+/* Style général */
+body {
+    font-family: Arial, sans-serif;
+    background: #fafafa;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Conteneur principal */
+.container {
+    max-width: 900px;
+    margin: auto;
+    padding: 20px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.08);
+}
+
+/* Image d’en-tête */
+.header-img {
+    width: 50%;
+    height: auto;
+    display: block;
+    margin: 20px auto;
+}
+
+/* Médaillon (pages d’énigmes) */
+.medaillon {
+    width: 30%;
+    display: block;
+    margin: 30px auto;
+    border-radius: 50%;
+}
+
+/* Texte historique */
+.ref-texte {
+    font-style: italic;
+    font-family: "Times New Roman", serif;
+    font-size: 1.2em;
+    text-align: center;
+    margin-top: 10px;
+}
+
+/* Titre d’énigme */
+.enigme {
+    margin-top: 40px;
+    text-align: center;
+    font-size: 1.6em;
+    font-weight: bold;
+}
+
+/* Image d’énigme */
+.enigme-img {
+    width: 50%;
+    display: block;
+    margin: 25px auto;
+}
+
+/* Signature */
+.signature {
+    margin-top: 35px;
+    font-weight: bold;
+    text-align: right;
+}
