@@ -29,7 +29,25 @@
     <!-- Image de l'énigme 04 -->
     <img src="IMAGE-05.jpeg" alt="Énigme 05" class="enigme-img">
 
+    <!-- Réponse attendue -->
+    <div class="reponse-zone">
+        <label for="reponse">Réponse :</label>
+        <input type="text" id="reponse" name="reponse" autocomplete="off">
+    </div>
 </div>
 
+<script>
+document.getElementById("reponse").addEventListener("keydown", function(event) {
+    if (event.key === "Enter") {
+        const val = this.value.trim().toLowerCase();
+        if (val === "clovis") {
+            window.location.href = "/05_clovis.html";
+        } else {
+            this.value = "";
+        }
+    }
+});
+</script>
+    
 </body>
 </html>
