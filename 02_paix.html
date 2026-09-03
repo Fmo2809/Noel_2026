@@ -28,7 +28,25 @@
     <!-- Image de l'énigme 03 -->
     <img src="IMAGE-03.jpeg" alt="Énigme 03" class="enigme-img">
 
+    <!-- Réponse attendue -->
+    <div class="reponse-zone">
+        <label for="reponse">Réponse :</label>
+        <input type="text" id="reponse" name="reponse" autocomplete="off">
+    </div>
 </div>
 
+<script>
+document.getElementById("reponse").addEventListener("keydown", function(event) {
+    if (event.key === "Enter") {
+        const val = this.value.trim().toLowerCase();
+        if (val === "turenne") {
+            window.location.href = "/03_turenne.html";
+        } else {
+            this.value = "";
+        }
+    }
+});
+</script>
+    
 </body>
 </html>
