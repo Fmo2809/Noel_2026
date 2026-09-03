@@ -26,6 +26,14 @@ body {
     margin: 20px auto;
 }
 
+h1 {
+    text-align: center;
+    font-size: 2.4em;
+    font-weight: bold;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
 /* Médaillon (pages d’énigmes) */
 .medaillon {
     width: 30%;
