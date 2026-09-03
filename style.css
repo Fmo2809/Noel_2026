@@ -72,3 +72,20 @@ body {
     font-weight: bold;
     text-align: right;
 }
+
+.reponse-zone {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.reponse-zone label {
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.reponse-zone input {
+    padding: 8px;
+    font-size: 1em;
+    width: 200px;
+}
+ 
