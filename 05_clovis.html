@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Énigme 04 – Bd Henri IV</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="container">
+
+    <!-- Image historique en médaillon -->
+    <img src="IMAGE-Paris-Histoire.jpeg" alt="Paris historique" class="medaillon">
+
+    <!-- Texte de référence -->
+    <p class="ref-texte">
+        Rue Clovis : 
+        Dédiée à Clovis Ier (v. 466–511), premier roi de tous les Francs et fondateur de la dynastie mérovingienne. La rue borde la tour Clovis (ancien clocher de l'abbaye Sainte-Geneviève, qu'il avait fondée avec la reine Clotilde).. 
+    </p>
+    <p class="ref-texte-small">
+	Clovis, 1er roi des Francs, rancunier avec le fameux vase de Soissons brisé par un soldat dont il fracassa le crâne 1 an plus tard
+    </p>
+
+    <!-- Enigme suivante -->
+    <div class="enigme">Enigme 06</div>
+
+    <!-- Image de l'énigme 06 -->
+    <img src="IMAGE-06.jpeg" alt="Énigme 06" class="enigme-img">
+
+    <!-- Réponse attendue -->
+    <div class="reponse-zone">
+        <label for="reponse">Réponse :</label>
+        <input type="text" id="reponse" name="reponse" autocomplete="off">
+    </div>
+</div>
+
+<script>
+document.getElementById("reponse").addEventListener("keydown", function(event) {
+    if (event.key === "Enter") {
+        const val = this.value.trim().toLowerCase();
+        if (val === "bonaprte") {
+            window.location.href = "/06_bonaparte.html";
+        } else {
+            this.value = "";
+        }
+    }
+});
+</script>
+    
+</body>
+</html>
