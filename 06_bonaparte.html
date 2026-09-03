@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Énigme 06 – Rue Bonaparte</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="container">
+
+    <!-- Image historique en médaillon -->
+    <img src="IMAGE-Paris-Histoire.jpeg" alt="Paris historique" class="medaillon">
+
+    <!-- Texte de référence -->
+    <p class="ref-texte">
+        Rue Bonaparte : Dédiée à Napoléon Bonaparte (1769-1821), premier consul puis empereur des Français. La rue regroupe d'anciens hôtels particuliers et longe l'École nationale supérieure des Beaux-Arts. 
+    </p>
+    <p class="ref-texte-small">
+	Napoléon a laissé un grand héritage à la France, dont la légion d'Honneur (... et pas besoin de maison : il avait un... bon appart' !)
+    </p>
+
+    <!-- Enigme suivante -->
+    <div class="enigme">Enigme 07</div>
+
+    <!-- Image de l'énigme 06 -->
+    <img src="IMAGE-07.jpeg" alt="Énigme 07" class="enigme-img">
+
+    <!-- Réponse attendue -->
+    <div class="reponse-zone">
+        <label for="reponse">Réponse :</label>
+        <input type="text" id="reponse" name="reponse" autocomplete="off">
+    </div>
+</div>
+
+<script>
+document.getElementById("reponse").addEventListener("keydown", function(event) {
+    if (event.key === "Enter") {
+        const val = this.value.trim().toLowerCase();
+        if (val === "vauban") {
+            window.location.href = "/07_vauban.html";
+        } else {
+            this.value = "";
+        }
+    }
+});
+</script>
+    
+</body>
+</html>
