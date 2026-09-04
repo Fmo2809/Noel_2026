@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Énigme 12 – Bd Diderot</title>
+    <title>Énigme 13 – Rue Jeanne d'Arc</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -16,14 +16,14 @@
 
     <!-- Texte de référence -->
     <p class="ref-texte">
-        Bd Diderot : Dédié à Denis Diderot (1713-1784), écrivain et philosophe des <b>Lumières</b>, maître d'œuvre avec D'Alembert de l' <b>Encyclopédie</b>, monument intellectuel majeur du XVIIIème siècle français.
+        Hommage à Jeanne d'<b>Arc</b> (v. 1412-1431), héroïne de la guerre de <b>Cent</b> Ans et figure emblématique de l'histoire nationale, qui délivra Orléans et fit sacrer le roi Charles VII à Reims.
     </p>
 
     <!-- Enigme suivante -->
-    <div class="enigme">Enigme 13</div>
+    <div class="enigme">Enigme 14</div>
 
-    <!-- Image de l'énigme 13 -->
-    <img src="IMAGE-13.jpeg" alt="Énigme 13" class="enigme-img">
+    <!-- Image de l'énigme 14 -->
+    <img src="IMAGE-14.jpeg" alt="Énigme 14" class="enigme-img">
 
     <!-- Réponse attendue -->
     <div class="reponse-zone">
@@ -36,8 +36,8 @@
 document.getElementById("reponse").addEventListener("keydown", function(event) {
     if (event.key === "Enter") {
         const val = this.value.trim().toLowerCase();
-        if (val === "jeanne-d-arc") {
-            window.location.href = "/13_jeanne-d'arc.html";
+        if (val === "general-leclerc") {
+            window.location.href = "/14_general-leclerc.html";
         } else {
             this.value = "";
         }
