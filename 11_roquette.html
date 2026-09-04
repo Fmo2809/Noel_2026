@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Énigme 11 – Rue de la Roquette</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="container">
+
+    <!-- Image historique en médaillon -->
+    <img src="IMAGE-Paris-Histoire.jpeg" alt="Paris historique" class="medaillon">
+
+    <!-- Texte de référence -->
+    <p class="ref-texte">
+        Rue de la Roquette : Tracé historique menant à l'ancien couvent des Hospitalières de la Roquette. Au $XIX^e$ siècle, la rue abritait les prisons de la Petite et de la Grande Roquette, lieux majeurs de la détention et des exécutions publiques à Paris.
+    </p>
+
+    <!-- Enigme suivante -->
+    <div class="enigme">Enigme 12</div>
+
+    <!-- Image de l'énigme 12 -->
+    <img src="IMAGE-12.jpeg" alt="Énigme 12" class="enigme-img">
+
+    <!-- Réponse attendue -->
+    <div class="reponse-zone">
+        <label for="reponse">Réponse :</label>
+        <input type="text" id="reponse" name="reponse" autocomplete="off">
+    </div>
+</div>
+
+<script>
+document.getElementById("reponse").addEventListener("keydown", function(event) {
+    if (event.key === "Enter") {
+        const val = this.value.trim().toLowerCase();
+        if (val === "diderot") {
+            window.location.href = "/12-diderot.html";
+        } else {
+            this.value = "";
+        }
+    }
+});
+</script>
+    
+</body>
+</html>
