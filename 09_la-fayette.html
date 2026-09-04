@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Énigme 09 – Rue La Fayette</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="container">
+
+    <!-- Image historique en médaillon -->
+    <img src="IMAGE-Paris-Histoire.jpeg" alt="Paris historique" class="medaillon">
+
+    <!-- Texte de référence -->
+    <p class="ref-texte">
+        Rue La Fayette : Dédiée à Gilbert du Motier, marquis de La Fayette (1757-1834), héroïque « héros des deux mondes », figure-clé de la guerre d'indépendance des États-Unis et commandant de la Garde nationale lors des Révolutions de 1789 et 1830.
+    </p>
+
+    <!-- Enigme suivante -->
+    <div class="enigme">Enigme 10</div>
+
+    <!-- Image de l'énigme 10 -->
+    <img src="IMAGE-10.jpeg" alt="Énigme 10" class="enigme-img">
+
+    <!-- Réponse attendue -->
+    <div class="reponse-zone">
+        <label for="reponse">Réponse :</label>
+        <input type="text" id="reponse" name="reponse" autocomplete="off">
+    </div>
+</div>
+
+<script>
+document.getElementById("reponse").addEventListener("keydown", function(event) {
+    if (event.key === "Enter") {
+        const val = this.value.trim().toLowerCase();
+        if (val === "la-fayette") {
+            window.location.href = "/09_la-fayette.html";
+        } else {
+            this.value = "";
+        }
+    }
+});
+</script>
+    
+</body>
+</html>
