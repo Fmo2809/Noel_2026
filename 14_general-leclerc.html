@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Énigme 14 –Avenue du Général Leclerc</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="container">
+
+    <!-- Image historique en médaillon -->
+    <img src="IMAGE-Paris-Histoire.jpeg" alt="Paris historique" class="medaillon">
+
+    <!-- Texte de référence -->
+    <p class="ref-texte">
+        Honore Philippe <b>Leclerc</b> de Hauteclocque (1902-1947), commandant de la 2ᵉ <b>division</b> blindée (2ᵉ DB). C'est par cet axe majeur que la 2ᵉ DB entra victorieusement dans Paris le <b>25 août</b> 1944 pour libérer la Capitale
+    </p>
+
+    <!-- Enigme suivante -->
+    <div class="enigme">Enigme 15</div>
+
+    <!-- Image de l'énigme 15 -->
+    <img src="IMAGE-15.jpeg" alt="Énigme 15" class="enigme-img">
+
+    <!-- Réponse attendue -->
+    <div class="reponse-zone">
+        <label for="reponse">Réponse :</label>
+        <input type="text" id="reponse" name="reponse" autocomplete="off">
+    </div>
+</div>
+
+<script>
+document.getElementById("reponse").addEventListener("keydown", function(event) {
+    if (event.key === "Enter") {
+        const val = this.value.trim().toLowerCase();
+        if (val === "emile-zola") {
+            window.location.href = "/15_emile-zola.html";
+        } else {
+            this.value = "";
+        }
+    }
+});
+</script>
+    
+</body>
+</html>
