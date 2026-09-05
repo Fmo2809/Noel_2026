@@ -73,7 +73,12 @@ h1 {
     display: block;
     margin: 25px auto;
 }
-
+/* Image de fin */
+.enigme-fin {
+    width: 70%;
+    display: block;
+    margin: 25px auto;
+}
 /* Signature */
 .signature {
     margin-top: 35px;
