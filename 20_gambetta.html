@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Énigme 18 - Rue Ordener</title>
+    <title>Énigme 20 - Av Gambetta</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -16,35 +16,19 @@
 
     <!-- Texte de référence -->
     <p class="ref-texte">
-        Rue Ordener : <br> 
-Porte le nom du général Michel Ordener (1755-1811), officier de cavalerie de la Révolution et du Premier Empire. S'étant illustré à Austerlitz à la tête des grenadiers à cheval de la Garde impériale, il fut fait comte d'Empire par Napoléon Ier.
+        Av Gambetta : <br> 
+        Dédiée à Léon Gambetta (1838-1882), figure fondamentale de la IIIᵉ République. <br>
+        Membre du gouvernement de la Défense nationale en 1870, il quitta Paris assiégé en ballon pour organiser la résistance en province, <br>
+        puis devint l'un des grands bâtisseurs du régime républicain.
     </p>
 
     <!-- Enigme suivante -->
-    <div class="enigme">Enigme 19</div>
+    <div class="enigme">Fin</div>
 
-    <!-- Image de l'énigme 19 -->
-    <img src="IMAGE-19.jpeg" alt="Énigme 19" class="enigme-img">
+    <!-- Image de fin -->
+    <img src="IMAGE-fin.jpeg" alt="Image de fin" class="enigme-img">
 
-    <!-- Réponse attendue -->
-    <div class="reponse-zone">
-        <label for="reponse">Réponse :</label>
-        <input type="text" id="reponse" name="reponse" autocomplete="off">
-    </div>
 </div>
 
-<script>
-document.getElementById("reponse").addEventListener("keydown", function(event) {
-    if (event.key === "Enter") {
-        const val = this.value.trim().toLowerCase();
-        if (val === "jean-jaures") {
-            window.location.href = "/19_jean-jaures.html";
-        } else {
-            this.value = "";
-        }
-    }
-});
-</script>
-    
 </body>
 </html>
