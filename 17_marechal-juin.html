@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Énigme 17 - Maréchal Juin</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="container">
+
+    <!-- Image historique en médaillon -->
+    <img src="IMAGE-Paris-Histoire.jpeg" alt="Paris historique" class="medaillon">
+
+    <!-- Texte de référence -->
+    <p class="ref-texte">
+        Porte le nom d'Alphonse <b>Juin</b> (1888-1967), <b>maréchal de France</b> et figure centrale de la Seconde Guerre mondiale. Il s'est illustré à la tête du Corps expéditionnaire français en Italie lors de la campagne de 1943-1944, notamment durant la percée de la ligne Gustav à Monte Cassino.
+    </p>
+
+    <!-- Enigme suivante -->
+    <div class="enigme">Enigme 18</div>
+
+    <!-- Image de l'énigme 18 -->
+    <img src="IMAGE-18.jpeg" alt="Énigme 18" class="enigme-img">
+
+    <!-- Réponse attendue -->
+    <div class="reponse-zone">
+        <label for="reponse">Réponse :</label>
+        <input type="text" id="reponse" name="reponse" autocomplete="off">
+    </div>
+</div>
+
+<script>
+document.getElementById("reponse").addEventListener("keydown", function(event) {
+    if (event.key === "Enter") {
+        const val = this.value.trim().toLowerCase();
+        if (val === "ordener") {
+            window.location.href = "/18_ordener.html";
+        } else {
+            this.value = "";
+        }
+    }
+});
+</script>
+    
+</body>
+</html>
